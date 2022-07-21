@@ -7,6 +7,10 @@ function Header() {
 </header>
 }
 function App() {
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
   return (
     <div>
       <Header></Header>
@@ -22,6 +26,7 @@ function App() {
       </article>
     </div>
   );
+  refreshPage()
 }
 
 export default App;
